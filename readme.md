@@ -53,21 +53,14 @@ sudo apt install ffmpeg
 Run the script from the command line:
 
 ```bash
-python downloader.py
+python youtube-audio-downloader.py
 ```
 
-You'll be prompted to enter a **YouTube video ID** (the part after `v=` in a YouTube URL).
-
-Example:
+You'll be prompted to enter a **YouTube video ID or URL**. Example:
 
 If the URL is:
 ```
 https://www.youtube.com/watch?v=dQw4w9WgXcQ
-```
-
-Then the video ID is:
-```
-dQw4w9WgXcQ
 ```
 
 The script will download the audio and save it as:
