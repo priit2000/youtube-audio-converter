@@ -22,7 +22,9 @@ This Python script allows you to download the audio from a YouTube video in MP3 
 
 2. **Install Python dependencies**
 
+```bash
 pip install yt-dlp
+```
 
 3. **Install FFmpeg**
 
@@ -30,12 +32,16 @@ FFmpeg is required for audio conversion. You can install it via:
 
 ### macOS (Homebrew)
 
+```bash
 brew install ffmpeg
+```
 
 ### Ubuntu/Debian
 
+```bash
 sudo apt update
 sudo apt install ffmpeg
+```
 
 ### Windows
 
@@ -46,29 +52,39 @@ sudo apt install ffmpeg
 
 Run the script from the command line:
 
+```bash
 python downloader.py
+```
 
 You'll be prompted to enter a **YouTube video ID** (the part after `v=` in a YouTube URL).
 
 Example:
 
 If the URL is:
+```
 https://www.youtube.com/watch?v=dQw4w9WgXcQ
+```
 
 Then the video ID is:
+```
 dQw4w9WgXcQ
+```
 
 The script will download the audio and save it as:
 
+```
 Rick Astley - Never Gonna Give You Up.mp3
+```
 
 ## Example Output
 
+```bash
 Enter YouTube video ID: dQw4w9WgXcQ
 [youtube] dQw4w9WgXcQ: Downloading webpage
 [download] Rick Astley - Never Gonna Give You Up.webm has already been downloaded
 [ExtractAudio] Destination: Rick Astley - Never Gonna Give You Up.mp3
 Conversion complete.
+```
 
 ## License
 
