@@ -15,6 +15,10 @@ def download_audio(url):
         ydl.download([url])
 
 if __name__ == "__main__":
-    video_id = input("Enter YouTube video ID: ")
-    download_audio(f"https://www.youtube.com/watch?v={video_id}")
-    print("Conversion complete.")
+    user_input = input("Enter YouTube video ID or URL: ")
+    if not user_input.startswith(("http://", "https://")):
+        video_url = f"https://www.youtube.com/watch?v={user_input}"
+    else:
+        video_url = user_input
+    download_audio(video_url)
+    print("Conversion ready.")
